@@ -1,0 +1,22 @@
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.exe.config
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.exe
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.pdb
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csprojResolveAssemblyReference.cache
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Login.resources
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Properties.Resources.resources
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csproj.GenerateResource.Cache
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.exe
+c:\users\lanz clinton valdez\documents\visual studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.pdb
+C:\Users\Lanz Clinton Valdez\Documents\Visual Studio 2013\Projects\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Main.resources
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.exe.config
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.exe
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\bin\Debug\SouthCrestLMS.pdb
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csproj.AssemblyReference.cache
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csproj.SuggestedBindingRedirects.cache
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Login.resources
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Main.resources
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.Properties.Resources.resources
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csproj.GenerateResource.cache
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.csproj.CoreCompileInputs.cache
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.exe
+C:\Users\lanzc\Desktop\SouthCrestLMS\SouthCrestLMS\obj\Debug\SouthCrestLMS.pdb

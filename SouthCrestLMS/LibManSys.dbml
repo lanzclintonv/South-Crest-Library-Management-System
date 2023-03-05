@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SouthCrestLibManSys" Class="LibManSysDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LANZ-PC\LANZ;Initial Catalog=SouthCrestLibManSys;Integrated Security=True" SettingsObjectName="SouthCrestLMS.Properties.Settings" SettingsPropertyName="SouthCrestLibManSysConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Book_info" Member="Book_infos">
+    <Type Name="Book_info">
+      <Column Name="BookID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Publisher" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ISBN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Book_info_Transaction_info" Member="Transaction_infos" ThisKey="BookID" OtherKey="BookID" Type="Transaction_info" />
+    </Type>
+  </Table>
+  <Table Name="dbo.User_info" Member="User_infos">
+    <Type Name="User_info">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Borrower_info" Member="Borrower_infos">
+    <Type Name="Borrower_info">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grade" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Section" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CallNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Borrower_info_Transaction_info" Member="Transaction_infos" ThisKey="ID" OtherKey="ID" Type="Transaction_info" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Record_info" Member="Record_infos">
+    <Type Name="Record_info">
+      <Column Name="ReferenceID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReturnDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="BookID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Transaction_info_Record_info" Member="Transaction_info" ThisKey="ReferenceID" OtherKey="ReferenceID" Type="Transaction_info" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transaction_info" Member="Transaction_infos">
+    <Type Name="Transaction_info">
+      <Column Name="ReferenceID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BorrowDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FineAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FineStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Transaction_info_Record_info" Member="Record_info" ThisKey="ReferenceID" OtherKey="ReferenceID" Type="Record_info" Cardinality="One" />
+      <Association Name="Book_info_Transaction_info" Member="Book_info" ThisKey="BookID" OtherKey="BookID" Type="Book_info" IsForeignKey="true" />
+      <Association Name="Borrower_info_Transaction_info" Member="Borrower_info" ThisKey="ID" OtherKey="ID" Type="Borrower_info" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
